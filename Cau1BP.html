@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cau1BPTest</title>
+</head>
+<body>
+<script>
+    var a = [10,5,2,8,-1,6,8];
+    var minValue = a[0];
+    function findMinScore(arr) {
+        for(let i = 0; i <= arr.length; i++){
+            if(minValue > arr[i]){
+                minValue = arr[i];
+            }
+        }
+        return minValue;
+    }
+    console.log("Min Score in Array is : " + findMinScore(a));
+</script>
+</body>
+</html>

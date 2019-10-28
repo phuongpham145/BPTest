@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cau2BPTest</title>
+</head>
+<body>
+<script>
+    var a = [12,6,3,7,21,5,7];
+    var index = parseInt(prompt("Enter index : "));
+    function tryRemoveFromArray(arr,position) {
+        for (i = position; i < arr.length; i++){
+            arr[i] = a[i+1];
+        }
+        arr.length--;
+        for (i = 0; i < arr.length; i++){
+            console.log(arr[i]);
+        }
+    }
+    tryRemoveFromArray(a,index);
+</script>
+</body>
+</html>
